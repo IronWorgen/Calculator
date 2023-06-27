@@ -5,7 +5,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MainFrame {
+    /**
+     * выбрать обычный калькулятор
+     */
     JButton defaultCalculatorButton;
+    /**
+     * выбрать калькулятор комплексных чисел
+     */
     JButton complexCalculatorButton;
 
     public MainFrame(JButton defaultCalculatorButton, JButton complexCalculatorButton) {
@@ -13,6 +19,9 @@ public class MainFrame {
         this.complexCalculatorButton = complexCalculatorButton;
     }
 
+    /**
+     * отобразить окно
+     */
     public void showWindow() {
         JFrame window = new JFrame("Выбор калькулятора");
 

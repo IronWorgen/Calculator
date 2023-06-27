@@ -6,14 +6,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ViewDefaultCalculator implements iGetView {
+    /**
+     * кнопка посчитать
+     */
     JButton getResultButton;
+    /**
+     * первая переменная
+     */
     JTextField argX;
+    /**
+     * вторая переменная
+     */
     JTextField argY;
+    /**
+     * знак
+     */
     JComboBox operation;
+    /**
+     * ответ
+     */
     JLabel result;
+    /**
+     * история вычислений
+     */
     JTextArea historyArea1;
-
-    int historyAreaRows ;
+    /**
+     * количество отображаемых последних вычислений
+     */
+    int historyAreaRows;
 
     public ViewDefaultCalculator(JButton getResultButton, int historyAreaRows) {
         this.getResultButton = getResultButton;
@@ -25,7 +45,7 @@ public class ViewDefaultCalculator implements iGetView {
         String[] items = new String[]{"+", "-", "*", "/"};
         operation = new JComboBox(items);
         historyArea1 = new JTextArea();
-        this.historyAreaRows =  historyAreaRows;
+        this.historyAreaRows = historyAreaRows;
 
 
     }
@@ -61,7 +81,6 @@ public class ViewDefaultCalculator implements iGetView {
 
         JPanel historyArea1Panel = new JPanel();
         historyArea1Panel.add(historyArea1);
-
 
 
         mainBox.add(Box.createVerticalGlue());
@@ -114,19 +133,25 @@ public class ViewDefaultCalculator implements iGetView {
         result.setVisible(true);
 
     }
+
+    /**
+     * установить текст в поле история операций
+     *
+     * @param history
+     */
     @Override
-    public void setHistory(String[] history){
-        String historyString="";
-        if (history.length<historyAreaRows){
+    public void setHistory(String[] history) {
+        String historyString = "";
+        if (history.length < historyAreaRows) {
             for (int i = 0; i < history.length; i++) {
-                historyString+=history[i]+"\n";
+                historyString += history[i] + "\n";
             }
             historyArea1.setText(historyString);
             return;
         }
 
         for (int i = 0; i < history.length; i++) {
-            historyString+=history[i]+"\n";
+            historyString += history[i] + "\n";
         }
         historyArea1.setText(historyString);
 

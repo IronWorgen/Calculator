@@ -1,13 +1,10 @@
 package controllers;
 
-import model.ComplexCalculatorHistory;
-import model.DefaultCalculatorHistory;
+import model.CalculatorHistory;
 import model.iGetModel;
 import services.ComplexCalculatorService;
-import services.DefaultCalculatorService;
 import services.iCalculatorService;
 import view.ViewComplexCalculator;
-import view.ViewDefaultCalculator;
 import view.iGetView;
 
 import javax.swing.*;
@@ -19,7 +16,10 @@ public class ComplexCalculatorController {
     iGetView view;
     iGetModel history;
     iCalculatorService calculatorService;
-    private int historySize=10;
+    /**
+     *  количество последних операций, который надо показать пользователю
+     */
+    private int historySize = 10;
 
     public ComplexCalculatorController() {
         JButton getResultButton = new JButton("Посчитать");
@@ -31,7 +31,7 @@ public class ComplexCalculatorController {
         });
 
         view = new ViewComplexCalculator(getResultButton, historySize);
-        history = new DefaultCalculatorHistory("Complex Calculator History");
+        history = new CalculatorHistory("Complex Calculator History");
         calculatorService = new ComplexCalculatorService();
     }
 

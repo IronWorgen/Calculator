@@ -1,11 +1,13 @@
 package services.complexCalculator;
 
+import java.text.DecimalFormat;
+
 public class ComplexCalculator implements iCalculator {
     /**
      * сложение
      *
-     * @param num1
-     * @param num2
+     * @param num1 первое комплексное число
+     * @param num2 второе комплексное число
      * @return
      */
     @Override
@@ -20,8 +22,8 @@ public class ComplexCalculator implements iCalculator {
     /**
      * вычитание
      *
-     * @param num1
-     * @param num2
+     * @param num1 первое комплексное число
+     * @param num2 второе комплексное число
      * @return
      */
     @Override
@@ -36,8 +38,8 @@ public class ComplexCalculator implements iCalculator {
     /**
      * умножение
      *
-     * @param num1
-     * @param num2
+     * @param num1 первое комплексное число
+     * @param num2 второе комплексное число
      * @return
      */
     @Override
@@ -52,8 +54,8 @@ public class ComplexCalculator implements iCalculator {
     /**
      * деление
      *
-     * @param num1
-     * @param num2
+     * @param num1 первое комплексное число
+     * @param num2 второе комплексное число
      * @return
      */
 
@@ -66,6 +68,7 @@ public class ComplexCalculator implements iCalculator {
 
         double resultX1 = (a * c + b * d) / (c * c + d * d);
         double resultX2 = (b * c - a * d) / (c * c + d * d);
+
 
         ComplexNum result = new ComplexNum(resultX1, resultX2);
         return result;

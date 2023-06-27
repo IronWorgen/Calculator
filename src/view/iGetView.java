@@ -29,6 +29,7 @@ public interface iGetView {
 
     /**
      * отобразить историю
+     *
      * @param history
      */
     void setHistory(String[] history);

@@ -1,5 +1,7 @@
 package services.complexCalculator;
 
+import java.text.DecimalFormat;
+
 public class ComplexNum {
     /**
      * действительная часть комплексного числа
@@ -33,18 +35,20 @@ public class ComplexNum {
 
     @Override
     public String toString() {
+        DecimalFormat decimalFormat = new DecimalFormat("###.###");
+
         if (x2 == 0 && x1 == 0) {
             return "0";
         } else if (x2 == 0) {
-            return Double.toString(x1);
+            return decimalFormat.format(x1);
         } else if (x1 == 0) {
 
-            return x2 + "i";
+            return decimalFormat.format(x2) + "i";
         }
 
         if (x2 < 0) {
-            return x1 + " - " + x2 * (-1) + "i";
+            return decimalFormat.format(x1) + " - " + decimalFormat.format(x2 * (-1)) + "i";
         }
-        return x1 + " + " + x2 + "i";
+        return decimalFormat.format(x1) + " + " + decimalFormat.format(x2) + "i";
     }
 }

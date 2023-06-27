@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ViewComplexCalculator implements iGetView {
+    /**
+     * кнопка посчитать
+     */
     JButton getResultButton;
     /**
      * Вещественная часть первого числа
@@ -31,7 +34,13 @@ public class ViewComplexCalculator implements iGetView {
      * результат вычисления
      */
     JLabel result;
+    /**
+     * вывести поле вывода истории вычислений
+     */
     JTextArea historyArea1;
+    /**
+     * количество последних операций которые надо показывать
+     */
 
     int historyAreaRows;
 
@@ -45,11 +54,10 @@ public class ViewComplexCalculator implements iGetView {
         result = new JLabel("результат");
 
 
-
         String[] items = new String[]{"+", "-", "*", "/"};
         operation = new JComboBox(items);
         historyArea1 = new JTextArea();
-        this.historyAreaRows=historyAreaRows;
+        this.historyAreaRows = historyAreaRows;
 
     }
 
@@ -150,22 +158,26 @@ public class ViewComplexCalculator implements iGetView {
         result.setVisible(true);
     }
 
+    /**
+     * установить текст в поле история операций
+     *
+     * @param history
+     */
     @Override
     public void setHistory(String[] history) {
-        String historyString="";
-        if (history.length<historyAreaRows){
+        String historyString = "";
+        if (history.length < historyAreaRows) {
             for (int i = 0; i < history.length; i++) {
-                historyString+=history[i]+"\n";
+                historyString += history[i] + "\n";
             }
             historyArea1.setText(historyString);
             return;
         }
 
         for (int i = 0; i < history.length; i++) {
-            historyString+=history[i]+"\n";
+            historyString += history[i] + "\n";
         }
         historyArea1.setText(historyString);
-
     }
 
 }

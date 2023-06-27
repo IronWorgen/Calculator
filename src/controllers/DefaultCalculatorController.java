@@ -1,6 +1,6 @@
 package controllers;
 
-import model.DefaultCalculatorHistory;
+import model.CalculatorHistory;
 import model.iGetModel;
 import services.DefaultCalculatorService;
 import services.iCalculatorService;
@@ -13,10 +13,14 @@ import java.awt.event.ActionListener;
 import java.util.List;
 
 public class DefaultCalculatorController {
+
     iGetView view;
     iGetModel history;
     iCalculatorService calculatorService;
-    int sizeViewHistory=10;
+    /**
+     * количество последних операций, который надо показать пользователю
+     */
+    int sizeViewHistory = 10;
 
     public DefaultCalculatorController() {
         JButton getResultButton = new JButton("Посчитать");
@@ -28,7 +32,7 @@ public class DefaultCalculatorController {
         });
 
         view = new ViewDefaultCalculator(getResultButton, sizeViewHistory);
-        history = new DefaultCalculatorHistory("Calculator History");
+        history = new CalculatorHistory("Calculator History");
         calculatorService = new DefaultCalculatorService();
     }
 

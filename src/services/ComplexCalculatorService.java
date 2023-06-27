@@ -6,6 +6,7 @@ import services.complexCalculator.ComplexCalculatorDecorator;
 import services.complexCalculator.ComplexNum;
 import services.complexCalculator.iCalculator;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class ComplexCalculatorService implements iCalculatorService {
@@ -33,7 +34,6 @@ public class ComplexCalculatorService implements iCalculatorService {
         ComplexNum complexNumber2 = new ComplexNum(num2X1, num2X2);
 
         ComplexNum result = null;
-
         if (operation.equals("+")) {
             result = calculator.sum(complexNumber1, complexNumber2);
             return String.format("(%s) + (%s) = %s", complexNumber1.toString(), complexNumber2.toString(), result.toString());
