@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4a2cc31-0c13-462b-ba5f-d2ec452ee9dd" name="Changes" comment="v 1.0">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e4a2cc31-0c13-462b-ba5f-d2ec452ee9dd" name="Changes" comment="v1.1">
+      <change beforePath="$PROJECT_DIR$/Calculator History" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator History" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Complex Calculator History" beforeDir="false" afterPath="$PROJECT_DIR$/Complex Calculator History" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ComplexCalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ComplexCalculatorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/DefaultCalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/DefaultCalculatorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ComplexCalculatorHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/DefaultCalculatorHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CalculatorHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/iGetModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/iGetModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ComplexCalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ComplexCalculatorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/complexCalculator/ComplexCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/complexCalculator/ComplexCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/complexCalculator/ComplexNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/complexCalculator/ComplexNum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/complexCalculator/iCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/complexCalculator/iCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ViewComplexCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ViewComplexCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ViewDefaultCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ViewDefaultCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/iGetView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/iGetView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CalculatorHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CalculatorHistory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687889096226</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="v1.1">
+      <created>1687893814547</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687893814547</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -113,6 +108,7 @@
     <MESSAGE value="commit2" />
     <MESSAGE value="add default history" />
     <MESSAGE value="v 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 1.0" />
+    <MESSAGE value="v1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.1" />
   </component>
 </project>

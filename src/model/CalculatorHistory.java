@@ -28,7 +28,7 @@ public class CalculatorHistory implements iGetModel {
             System.out.println("Файл найден");
         }
         Date dateNow = new Date();
-        SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yyyy hh:mm:ss':'");
+        SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss':'");
 
         try (FileWriter writer = new FileWriter(fileName, true)) {
 
