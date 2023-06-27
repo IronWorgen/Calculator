@@ -31,8 +31,12 @@ public class ViewComplexCalculator implements iGetView {
      * результат вычисления
      */
     JLabel result;
+    JTextArea historyArea1;
 
-    public ViewComplexCalculator(JButton getResultButton) {
+    int historyAreaRows;
+
+
+    public ViewComplexCalculator(JButton getResultButton, int historyAreaRows) {
         this.getResultButton = getResultButton;
         num1X1 = new JTextField(3);
         num1X2 = new JTextField(3);
@@ -41,8 +45,12 @@ public class ViewComplexCalculator implements iGetView {
         result = new JLabel("результат");
 
 
+
         String[] items = new String[]{"+", "-", "*", "/"};
         operation = new JComboBox(items);
+        historyArea1 = new JTextArea();
+        this.historyAreaRows=historyAreaRows;
+
     }
 
     /**
@@ -76,11 +84,15 @@ public class ViewComplexCalculator implements iGetView {
         getResultPanel.add(getResultButton);
 
         JPanel resultLabelPanel = new JPanel();
+        result.setFont(new Font("Century Gothic", Font.BOLD, 16));
         result.setVisible(false);
         resultLabelPanel.add(result, Component.CENTER_ALIGNMENT);
 
         JPanel historyLabelPanel = new JPanel();
-        resultLabelPanel.add(new JLabel("История вычислений"), Component.CENTER_ALIGNMENT);
+        historyLabelPanel.add(new JLabel("История вычислений"), Component.CENTER_ALIGNMENT);
+
+        JPanel historyArea1Panel = new JPanel();
+        historyArea1Panel.add(historyArea1);
 
 
         mainBox.add(Box.createVerticalGlue());
@@ -88,7 +100,8 @@ public class ViewComplexCalculator implements iGetView {
         mainBox.add(getResultPanel);
         mainBox.add(resultLabelPanel);
         mainBox.add(historyLabelPanel);
-        mainBox.add(new JTextField());
+        mainBox.add(historyArea1Panel);
+
         mainBox.add(Box.createVerticalGlue());
 
 
@@ -139,6 +152,20 @@ public class ViewComplexCalculator implements iGetView {
 
     @Override
     public void setHistory(String[] history) {
+        String historyString="";
+        if (history.length<historyAreaRows){
+            for (int i = 0; i < history.length; i++) {
+                historyString+=history[i]+"\n";
+            }
+            historyArea1.setText(historyString);
+            return;
+        }
+
+        for (int i = 0; i < history.length; i++) {
+            historyString+=history[i]+"\n";
+        }
+        historyArea1.setText(historyString);
 
     }
+
 }

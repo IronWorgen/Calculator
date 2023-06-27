@@ -36,6 +36,7 @@ public class DefaultCalculatorController {
      * запустить калькулятор
      */
     public void run() {
+        view.setHistory(history.getOperationHistory(sizeViewHistory));
         view.showWindow();
     }
 

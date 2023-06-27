@@ -19,6 +19,7 @@ public class ComplexCalculatorController {
     iGetView view;
     iGetModel history;
     iCalculatorService calculatorService;
+    private int historySize=10;
 
     public ComplexCalculatorController() {
         JButton getResultButton = new JButton("Посчитать");
@@ -29,8 +30,8 @@ public class ComplexCalculatorController {
             }
         });
 
-        view = new ViewComplexCalculator(getResultButton);
-        history = new ComplexCalculatorHistory();
+        view = new ViewComplexCalculator(getResultButton, historySize);
+        history = new DefaultCalculatorHistory("Complex Calculator History");
         calculatorService = new ComplexCalculatorService();
     }
 
@@ -38,6 +39,7 @@ public class ComplexCalculatorController {
      * запустить калькулятор комплексных чисел
      */
     public void run() {
+        view.setHistory(history.getOperationHistory(historySize));
         view.showWindow();
     }
 
@@ -55,10 +57,9 @@ public class ComplexCalculatorController {
             view.showErrorWindow("Ошибка вычисления");
             return;
         }
-
+        history.setHistory(result);
+        view.setHistory(history.getOperationHistory(historySize));
         view.setResult(result);
-
-
     }
 
     /**

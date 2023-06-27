@@ -43,7 +43,7 @@ public class ComplexCalculatorService implements iCalculatorService {
         } else if (operation.equals("*")) {
             result = calculator.multi(complexNumber1, complexNumber2);
             return String.format("(%s) * (%s) = %s", complexNumber1.toString(), complexNumber2.toString(), result.toString());
-        } else if (operation.equals("-")) {
+        } else if (operation.equals("/")) {
             result = calculator.division(complexNumber1, complexNumber2);
             return String.format("(%s) / (%s) = %s", complexNumber1.toString(), complexNumber2.toString(), result.toString());
         }

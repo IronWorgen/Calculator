@@ -53,6 +53,7 @@ public class ViewDefaultCalculator implements iGetView {
         JPanel resultLabelPanel = new JPanel();
 
         result.setVisible(false);
+        result.setFont(new Font("Century Gothic", Font.BOLD, 16));
         resultLabelPanel.add(result, Component.CENTER_ALIGNMENT);
 
         JPanel historyLabelPanel = new JPanel();
