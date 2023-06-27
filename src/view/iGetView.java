@@ -9,22 +9,29 @@ public interface iGetView {
     void showWindow();
 
     /**
-     *
      * @return список всех чисел введенных пользователем
      */
     List<String> getArguments();
 
     /**
      * вывести сообщение об ошибке
-     * @param errorMessage  текст сообщения
+     *
+     * @param errorMessage текст сообщения
      */
     void showErrorWindow(String errorMessage);
 
     /**
      * показать результат выполнения операции пользователю
+     *
      * @param resultStr результат
      */
     void setResult(String resultStr);
+
+    /**
+     * отобразить историю
+     * @param history
+     */
+    void setHistory(String[] history);
 
 
 }

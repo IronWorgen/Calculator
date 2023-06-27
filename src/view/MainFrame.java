@@ -13,7 +13,7 @@ public class MainFrame {
         this.complexCalculatorButton = complexCalculatorButton;
     }
 
-    public void showWindow(){
+    public void showWindow() {
         JFrame window = new JFrame("Выбор калькулятора");
 
 
@@ -31,7 +31,6 @@ public class MainFrame {
         defaultCalculatorButtonBox.add(Box.createHorizontalGlue());
         defaultCalculatorButtonBox.add(defaultCalculatorButton);
         defaultCalculatorButtonBox.add(Box.createHorizontalGlue());
-
 
 
         Box complexCalculatorButtonBox = Box.createHorizontalBox();
@@ -64,7 +63,6 @@ public class MainFrame {
         mainBox.add(Box.createVerticalStrut(10));
         mainBox.add(complexCalculatorButtonBox);
         mainBox.add(Box.createVerticalGlue());
-
 
 
         window.add(mainBox);

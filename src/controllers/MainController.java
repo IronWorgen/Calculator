@@ -31,12 +31,14 @@ public class MainController {
     /**
      * запуск окна выбора калькулятора
      */
-    public void run(){mainFrame.showWindow();}
+    public void run() {
+        mainFrame.showWindow();
+    }
 
     /**
      * передать управление контроллеру обычного калькулятора
      */
-    private void runDefaultCalculator(){
+    private void runDefaultCalculator() {
         DefaultCalculatorController defaultCalculatorController = new DefaultCalculatorController();
         defaultCalculatorController.run();
     }
@@ -44,10 +46,9 @@ public class MainController {
     /**
      * передать управление контроллеру калькулятора комплексных чисел
      */
-    private void runComplexCalculator(){
+    private void runComplexCalculator() {
         ComplexCalculatorController defaultCalculatorController = new ComplexCalculatorController();
         defaultCalculatorController.run();
     }
-
 
 }

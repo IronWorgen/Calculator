@@ -5,22 +5,29 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ViewDefaultCalculator implements iGetView{
+public class ViewDefaultCalculator implements iGetView {
     JButton getResultButton;
     JTextField argX;
     JTextField argY;
     JComboBox operation;
     JLabel result;
+    JTextArea historyArea1;
 
-    public ViewDefaultCalculator(JButton getResultButton) {
+    int historyAreaRows ;
+
+    public ViewDefaultCalculator(JButton getResultButton, int historyAreaRows) {
         this.getResultButton = getResultButton;
         argX = new JTextField(7);
         argY = new JTextField(7);
-        result= new JLabel("результат");
+        result = new JLabel("результат");
 
 
         String[] items = new String[]{"+", "-", "*", "/"};
         operation = new JComboBox(items);
+        historyArea1 = new JTextArea();
+        this.historyAreaRows =  historyAreaRows;
+
+
     }
 
 
@@ -40,7 +47,6 @@ public class ViewDefaultCalculator implements iGetView{
         inputPanel.add(argY);
 
 
-
         JPanel getResultPanel = new JPanel();
         getResultPanel.add(getResultButton);
 
@@ -49,13 +55,20 @@ public class ViewDefaultCalculator implements iGetView{
         result.setVisible(false);
         resultLabelPanel.add(result, Component.CENTER_ALIGNMENT);
 
+        JPanel historyLabelPanel = new JPanel();
+        historyLabelPanel.add(new JLabel("История вычислений"), Component.CENTER_ALIGNMENT);
+
+        JPanel historyArea1Panel = new JPanel();
+        historyArea1Panel.add(historyArea1);
+
+
 
         mainBox.add(Box.createVerticalGlue());
         mainBox.add(inputPanel);
         mainBox.add(getResultPanel);
         mainBox.add(resultLabelPanel);
-        mainBox.add(new JLabel("История вычислений"));
-        mainBox.add(new JTextField());
+        mainBox.add(historyLabelPanel);
+        mainBox.add(historyArea1Panel);
         mainBox.add(Box.createVerticalGlue());
 
 
@@ -67,6 +80,7 @@ public class ViewDefaultCalculator implements iGetView{
 
     /**
      * список всех чисел введенных пользователем
+     *
      * @return {"x", "знак", "y"}
      */
     @Override
@@ -80,7 +94,8 @@ public class ViewDefaultCalculator implements iGetView{
 
     /**
      * вывести сообщение об ошибке
-     * @param errorMessage  текст сообщения
+     *
+     * @param errorMessage текст сообщения
      */
     @Override
     public void showErrorWindow(String errorMessage) {
@@ -89,11 +104,30 @@ public class ViewDefaultCalculator implements iGetView{
 
     /**
      * показать результат выполнения операции пользователю
+     *
      * @param resultStr результат
      */
     @Override
     public void setResult(String resultStr) {
         result.setText(resultStr);
         result.setVisible(true);
+
+    }
+    @Override
+    public void setHistory(String[] history){
+        String historyString="";
+        if (history.length<historyAreaRows){
+            for (int i = 0; i < history.length; i++) {
+                historyString+=history[i]+"\n";
+            }
+            historyArea1.setText(historyString);
+            return;
+        }
+
+        for (int i = 0; i < history.length; i++) {
+            historyString+=history[i]+"\n";
+        }
+        historyArea1.setText(historyString);
+
     }
 }

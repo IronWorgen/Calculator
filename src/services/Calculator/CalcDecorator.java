@@ -28,8 +28,6 @@ public class CalcDecorator implements iCalculable {
         return result;
     }
 
-
-
     @Override
     public iCalculable subtraction(double arg) {
         double firstArg = oldCalc.getResult();

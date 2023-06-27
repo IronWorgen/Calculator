@@ -33,11 +33,18 @@ public class ComplexNum {
 
     @Override
     public String toString() {
-        if (x2<0){
-            return x1+" - " +"i"+x2*(-1);
-        } else if (x2==0) {
+        if (x2 == 0 && x1 == 0) {
+            return "0";
+        } else if (x2 == 0) {
             return Double.toString(x1);
+        } else if (x1 == 0) {
+
+            return x2 + "i";
         }
-        return x1+" + " +"i"+x2;
+
+        if (x2 < 0) {
+            return x1 + " - " + x2 * (-1) + "i";
+        }
+        return x1 + " + " + x2 + "i";
     }
 }

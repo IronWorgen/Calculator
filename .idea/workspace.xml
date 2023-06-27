@@ -4,29 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4a2cc31-0c13-462b-ba5f-d2ec452ee9dd" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/controllers/ComplexCalculatorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/DefaultCalculatorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/DefaultCalculatorHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/iGetModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Calculator/CalcDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Calculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Calculator/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Calculator/iCalculable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/ComplexCalculatorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/DefaultCalculatorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/complexCalculator/ComplexCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/complexCalculator/ComplexCalculatorDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/complexCalculator/ComplexNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/complexCalculator/iCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/iCalculatorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ViewComplexCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ViewDefaultCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/iGetView.java" afterDir="false" />
+    <list default="true" id="e4a2cc31-0c13-462b-ba5f-d2ec452ee9dd" name="Changes" comment="commit2">
+      <change afterPath="$PROJECT_DIR$/src/model/ComplexCalculatorHistory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/ComplexCalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ComplexCalculatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/DefaultCalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/DefaultCalculatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/DefaultCalculatorHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/DefaultCalculatorHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/iGetModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/iGetModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Calculator/CalcDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Calculator/CalcDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Calculator/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Calculator/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Calculator/iCalculable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Calculator/iCalculable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ComplexCalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ComplexCalculatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/DefaultCalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DefaultCalculatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/complexCalculator/ComplexCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/complexCalculator/ComplexCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/complexCalculator/ComplexCalculatorDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/complexCalculator/ComplexCalculatorDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/complexCalculator/ComplexNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/complexCalculator/ComplexNum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/complexCalculator/iCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/complexCalculator/iCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/iCalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/iCalculatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ViewComplexCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ViewComplexCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ViewDefaultCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ViewDefaultCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/iGetView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/iGetView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,11 +90,19 @@
       <option name="project" value="LOCAL" />
       <updated>1687816269154</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit2">
+      <created>1687875629118</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687875629118</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="commit2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit2" />
   </component>
 </project>
