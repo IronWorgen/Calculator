@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4a2cc31-0c13-462b-ba5f-d2ec452ee9dd" name="Changes" comment="v1.1">
-      <change beforePath="$PROJECT_DIR$/Calculator History" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator History" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Complex Calculator History" beforeDir="false" afterPath="$PROJECT_DIR$/Complex Calculator History" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CalculatorHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CalculatorHistory.java" afterDir="false" />
-    </list>
+    <list default="true" id="e4a2cc31-0c13-462b-ba5f-d2ec452ee9dd" name="Changes" comment="release" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,8 +96,26 @@
       <option name="project" value="LOCAL" />
       <updated>1687893814547</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="release">
+      <created>1687894165153</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687894165153</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
@@ -109,6 +123,7 @@
     <MESSAGE value="add default history" />
     <MESSAGE value="v 1.0" />
     <MESSAGE value="v1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.1" />
+    <MESSAGE value="release" />
+    <option name="LAST_COMMIT_MESSAGE" value="release" />
   </component>
 </project>
